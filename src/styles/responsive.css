@@ -1,0 +1,72 @@
+@media (max-width: 1080px) {
+  .hero-grid,
+  .two-column,
+  .contact-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid,
+  .compact-grid,
+  .timeline-grid,
+  .gallery-grid,
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-copy,
+  .hero-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: inline-flex;
+    border: 0;
+    background: rgba(24, 50, 43, 0.08);
+    border-radius: 999px;
+    padding: 0.8rem 1rem;
+    font-weight: 800;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 84px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 250, 242, 0.98);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links-open {
+    display: flex;
+  }
+
+  .card-grid,
+  .compact-grid,
+  .timeline-grid,
+  .gallery-grid,
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .page-banner {
+    padding-top: 3rem;
+  }
+}
