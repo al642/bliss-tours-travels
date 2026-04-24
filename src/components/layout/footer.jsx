@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <p className="eyebrow">Bliss Tours & Travel</p>
-          <h3>Designed to inspire confidence before the booking starts.</h3>
-          <p>{company.story}</p>
+          <h3>{company.tagline}</h3>
+          <p>{company.closing}</p>
         </div>
         <div>
           <h4>Explore</h4>

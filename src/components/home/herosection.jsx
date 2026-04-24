@@ -18,13 +18,13 @@ export default function HeroSection() {
         </div>
 
         <div className="hero-card">
-          <span className="hero-card-label">Inspiration taken from premium safari brands</span>
-          <h3>What this design direction emphasizes</h3>
+          <span className="hero-card-label">What Bliss Tours stands for</span>
+          <h3>Experience-led travel with detail and intention.</h3>
           <ul>
-            <li>Cinematic first impression with bold copy</li>
-            <li>Credibility through process, stats, and testimonials</li>
-            <li>Destination-led exploration instead of generic text blocks</li>
-            <li>Easy enquiry paths for both leisure and corporate clients</li>
+            <li>Personalized travel planning instead of fixed packages</li>
+            <li>Premium leisure journeys across Africa and beyond</li>
+            <li>Comfort, flow, and memorable moments designed in</li>
+            <li>Trusted execution from enquiry to return</li>
           </ul>
         </div>
       </div>

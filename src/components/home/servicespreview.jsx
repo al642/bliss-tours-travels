@@ -7,8 +7,8 @@ export default function ServicesPreview() {
       <div className="container">
         <SectionTitle
           eyebrow="What Bliss can sell online"
-          title="Built for customers, families, groups, and corporate planners."
-          text="The service mix gives the site commercial breadth while still feeling curated."
+          title="A service mix built for premium, stress-free travel."
+          text="These offerings come directly from the company profile and give the site a more accurate commercial shape."
         />
         <div className="card-grid compact-grid">
           {services.map((service) => (

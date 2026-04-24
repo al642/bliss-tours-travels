@@ -1,0 +1,4 @@
+node_modules/
+dist/
+*.log
+company-profile-copy.docx

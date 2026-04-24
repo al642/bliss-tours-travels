@@ -15,7 +15,7 @@ export default function ContactPage() {
       <PageBanner
         eyebrow="Contact"
         title="Make the next step feel easy."
-        text="Premium travel sites win when the enquiry path is simple, warm, and obvious on mobile."
+        text="Bliss Tours is built around personalized planning, so the enquiry process should feel simple, warm, and tailored from the start."
       />
       <section className="content-section">
         <div className="container contact-layout">
@@ -29,7 +29,7 @@ export default function ContactPage() {
               <a href={`mailto:${company.email}`}>{company.email}</a>
             </p>
             <p>
-              Replace these placeholders with your official profile details and live office address.
+              The brand is Uganda-based. The phone, WhatsApp, email, and exact office details can now be swapped with your live contact information.
             </p>
           </article>
 

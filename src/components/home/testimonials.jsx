@@ -8,7 +8,7 @@ export default function TestimonialsPreview() {
         <SectionTitle
           eyebrow="Social proof"
           title="Travel sites convert better when the reassurance feels specific."
-          text="Safari.com leans heavily on trust and service. This lighter version gives Bliss the same credibility signal."
+          text="Until live client reviews are added, this section supports the premium, client-focused positioning established in the company profile."
         />
 
         <div className="card-grid compact-grid">

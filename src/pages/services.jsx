@@ -7,8 +7,8 @@ export default function ServicesPage() {
     <>
       <PageBanner
         eyebrow="Services"
-        title="Travel support that goes beyond accommodation and transport."
-        text="This page helps position Bliss for both leisure travellers and more structured travel buyers."
+        title="Services built around seamless, customized travel experiences."
+        text="The company profile positions Bliss Tours as an experience-led planner offering tailored journeys, premium escapes, and dependable end-to-end coordination."
       />
       <section className="content-section">
         <div className="container card-grid compact-grid">
@@ -23,7 +23,7 @@ export default function ServicesPage() {
       <section className="content-section alt-section">
         <div className="container">
           <p className="eyebrow">How we work</p>
-          <h2>From brief to booking in four clear steps.</h2>
+          <h2>What makes the Bliss approach different.</h2>
           <div className="timeline-grid">
             {company.process.map((step) => (
               <article key={step} className="timeline-card">

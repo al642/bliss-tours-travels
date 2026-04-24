@@ -6,8 +6,8 @@ export default function AboutPage() {
     <>
       <PageBanner
         eyebrow="About Bliss"
-        title="A cleaner story for the company behind the trips."
-        text="This page is structured to help customers and partners quickly understand the brand promise, values, and operating style."
+        title="A premium travel brand built around personalization, precision, and experience."
+        text="This page uses the company profile to explain what Bliss Tours does, who it serves, and why its approach is different from fixed-package travel sellers."
       />
       <section className="content-section">
         <div className="container two-column">
@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="container two-column">
           <div>
             <p className="eyebrow">Brand story</p>
-            <h2>Built to present the company professionally on the web.</h2>
+            <h2>We don't sell trips. We design experiences.</h2>
             <p>{company.story}</p>
           </div>
           <div className="feature-stack">
@@ -36,6 +36,28 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="content-section">
+        <div className="container two-column">
+          <article className="info-card">
+            <p className="eyebrow">Target clients</p>
+            <h2>Who Bliss Tours serves</h2>
+            <ul>
+              {company.targetClients.map((client) => (
+                <li key={client}>{client}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="info-card">
+            <p className="eyebrow">Objectives</p>
+            <h2>Where the brand is heading</h2>
+            <ul>
+              {company.objectives.map((objective) => (
+                <li key={objective}>{objective}</li>
+              ))}
+            </ul>
+          </article>
         </div>
       </section>
     </>

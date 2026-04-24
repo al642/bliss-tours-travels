@@ -1,54 +1,73 @@
 export const company = {
   name: "Bliss Tours & Travel",
-  tagline: "Curated East African journeys with warmth, polish, and local insight.",
-  heroEyebrow: "Boutique Tours, Corporate Travel, and Safari Planning",
-  heroTitle: "Travel design that sells the dream and earns the trust.",
+  tagline: "We don't sell trips. We design experiences.",
+  heroEyebrow: "Uganda-Based Premium Travel Planning",
+  heroTitle: "Intentional travel experiences designed around the client, not the package.",
   heroDescription:
-    "Bliss Tours & Travel helps guests move from inspiration to itinerary with tailor-made safaris, beach escapes, group travel, and dependable travel support across East Africa.",
-  office: "Nairobi, Kenya",
+    "Bliss Tours & Travel Limited is a Uganda-based travel company specializing in curated, experience-driven travel across Africa and international destinations, with precision planning, seamless execution, and elevated travel experiences at the center.",
+  office: "Uganda",
   phone: "+254 700 000 000",
   whatsapp: "254700000000",
   email: "hello@blisstourstravel.com",
   stats: [
-    { value: "24/7", label: "trip support" },
-    { value: "12+", label: "signature itineraries" },
-    { value: "4", label: "core markets" },
-    { value: "100%", label: "custom trip planning" }
+    { value: "100%", label: "personalized trips" },
+    { value: "Africa +", label: "international reach" },
+    { value: "Premium", label: "travel positioning" },
+    { value: "Detail-led", label: "planning approach" }
   ],
   highlights: [
-    "Luxury and mid-range safaris",
-    "Corporate travel coordination",
-    "Beach and bush combinations",
-    "Visa guidance and airport transfers"
+    "Curated African and international travel",
+    "Luxury and experience-led itineraries",
+    "Group, honeymoon, and romantic getaways",
+    "Flights, stays, transfers, and activities"
   ],
   mission:
-    "To make African travel feel inspiring, seamless, and deeply personal from first enquiry to final touchdown.",
+    "To design and deliver seamless, high-quality travel experiences through personalized planning, trusted partnerships, and attention to detail, ensuring every journey feels effortless and unforgettable.",
   vision:
-    "To be the East African travel brand people trust for memorable journeys and a premium digital first impression.",
+    "To become East Africa's leading premium travel brand, recognized for delivering exceptional, customized travel experiences that go beyond expectations.",
   story:
-    "This first-pass profile positions Bliss Tours & Travel as a modern East African operator with strong client care, destination expertise, and a polished online image. Replace the placeholder contact details and narrative with your official company profile when ready.",
+    "Bliss Tours & Travel Limited specializes in curated, experience-driven travel across Africa and selected international destinations. Rather than selling pre-made packages, the company designs intentional, personalized journeys built around each client's lifestyle, preferences, and expectations.",
   values: [
     {
-      title: "Warm hospitality",
-      text: "Every interaction should feel thoughtful, human, and reassuring."
+      title: "Precision",
+      text: "Every detail matters, from accommodation and flights to activities and trip flow."
     },
     {
-      title: "Precision planning",
-      text: "We reduce booking stress through clarity, responsiveness, and detail."
+      title: "Personalization",
+      text: "No two trips are the same, because each journey is shaped around the traveller."
     },
     {
-      title: "Local expertise",
-      text: "Our recommendations are grounded in on-the-ground regional knowledge."
+      title: "Excellence",
+      text: "Bliss Tours prioritizes quality over volume and aims for elevated execution throughout."
     },
     {
-      title: "Brand confidence",
-      text: "We present the company as a credible operator ready for the global market."
+      title: "Trust",
+      text: "The brand is transparent, reliable, client-focused, and committed to getting the details right."
+    },
+    {
+      title: "Experience First",
+      text: "Trips are designed around how the journey feels, not just how the itinerary looks."
     }
   ],
   process: [
-    "Tell us the kind of trip, budget, and pace you want.",
-    "We shape an itinerary with destination logic and standout experiences.",
-    "You confirm the package, and we coordinate the details.",
-    "You travel with live support before, during, and after the journey."
-  ]
+    "We start with the client, not the destination.",
+    "We design around experience, not just cost.",
+    "We shape the flow for comfort, ease, and memorable moments.",
+    "The result is a trip that feels right from start to finish."
+  ],
+  targetClients: [
+    "Young professionals and entrepreneurs",
+    "Couples and honeymooners",
+    "Small groups seeking curated travel",
+    "Clients looking for premium, stress-free travel planning"
+  ],
+  objectives: [
+    "Deliver high-quality, customized travel experiences",
+    "Build a strong reputation as a premium travel brand in East Africa",
+    "Expand into international luxury travel markets",
+    "Create long-term client relationships through consistency and trust",
+    "Become the go-to brand for well-designed, experience-led travel"
+  ],
+  closing:
+    "At Bliss Tours, travel is not just about going somewhere. It is about how every moment is experienced, seamlessly, beautifully, and intentionally."
 };

@@ -18,6 +18,6 @@ export const packages = [
     duration: "5 Days",
     pace: "Easy",
     price: "Custom Quote",
-    summary: "A polished package for leadership retreats, incentive groups, and VIP travel."
+    summary: "A polished package for private groups, hosted travel, and premium stress-free planning."
   }
 ];

@@ -1,18 +1,34 @@
 export const services = [
   {
     title: "Tailor-Made Holidays",
-    text: "Private itineraries shaped around occasion, budget, travel style, and timeline."
+    text: "Custom travel planning with tailored itineraries shaped around lifestyle, preferences, and expectations."
   },
   {
-    title: "Corporate Travel",
-    text: "Reliable movement for conferences, executive meetings, incentive travel, and hosted groups."
+    title: "Holiday & Vacation Packages",
+    text: "Curated escapes across destinations such as Zanzibar, Kenya, Dubai, Morocco, and Seychelles."
   },
   {
-    title: "Safari Logistics",
-    text: "Accommodation, transfers, park routing, and on-ground coordination handled end to end."
+    title: "Luxury Travel Experiences",
+    text: "Elevated journeys focused on comfort, polish, memorable moments, and seamless execution."
   },
   {
-    title: "Travel Support",
-    text: "Visa guidance, airport meet-and-greet, travel tips, and responsive pre-departure help."
+    title: "Group Travel Coordination",
+    text: "Thoughtful planning for small groups who want travel that feels curated and stress-free."
+  },
+  {
+    title: "Honeymoon & Romantic Getaways",
+    text: "Beautifully paced trips built for couples, romance, and meaningful shared experiences."
+  },
+  {
+    title: "Flights & Accommodation Booking",
+    text: "Trusted booking support for air travel and stays that fit the quality and style of the itinerary."
+  },
+  {
+    title: "Airport Transfers & Ground Transport",
+    text: "Reliable movement between airport, hotel, and experiences for a smoother overall journey."
+  },
+  {
+    title: "Excursions & Activity Planning",
+    text: "Handpicked experiences that add flow, depth, and standout moments to each trip."
   }
 ];
