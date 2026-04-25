@@ -19,11 +19,11 @@ export default function Navbar() {
     <header className="navbar-wrap">
       <div className="container navbar">
         <Link className="brand" to="/">
-          <span className="brand-mark">BT</span>
-          <span>
-            <strong>{company.name}</strong>
-            <small>{company.office}</small>
-          </span>
+          <img
+            className="brand-logo brand-logo-light-surface"
+            src="/images/logo/biss-tours%20dark%20logo.png"
+            alt={company.name}
+          />
         </Link>
 
         <button

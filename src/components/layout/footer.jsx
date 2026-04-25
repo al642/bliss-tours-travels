@@ -6,7 +6,11 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <p className="eyebrow">Bliss Tours & Travel</p>
+          <img
+            className="footer-logo"
+            src="/images/logo/light%20mode%20logo.png"
+            alt={company.name}
+          />
           <h3>{company.tagline}</h3>
           <p>{company.closing}</p>
         </div>

@@ -136,7 +136,6 @@ ul {
 .quote-card,
 .timeline-card,
 .gallery-tile,
-.hero-card,
 .contact-form {
   border: 1px solid var(--line);
   border-radius: var(--radius);

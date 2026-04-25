@@ -12,7 +12,11 @@ export default function DestinationsPage() {
       <section className="content-section">
         <div className="container card-grid">
           {destinations.map((destination) => (
-            <article key={destination.slug} className="destination-card">
+            <article
+              key={destination.slug}
+              className="destination-card image-card"
+              style={{ "--card-image": `url(${destination.image})` }}
+            >
               <p className="destination-meta">{destination.country}</p>
               <h2>{destination.name}</h2>
               <p>{destination.blurb}</p>

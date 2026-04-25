@@ -13,7 +13,11 @@ export default function FeaturedDestinations() {
 
         <div className="card-grid">
           {destinations.map((destination) => (
-            <article key={destination.slug} className="destination-card">
+            <article
+              key={destination.slug}
+              className="destination-card image-card"
+              style={{ "--card-image": `url(${destination.image})` }}
+            >
               <p className="destination-meta">
                 {destination.country} • Best in {destination.season}
               </p>

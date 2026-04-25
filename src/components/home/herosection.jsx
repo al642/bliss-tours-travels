@@ -16,17 +16,6 @@ export default function HeroSection() {
             </Button>
           </div>
         </div>
-
-        <div className="hero-card">
-          <span className="hero-card-label">What Bliss Tours stands for</span>
-          <h3>Experience-led travel with detail and intention.</h3>
-          <ul>
-            <li>Personalized travel planning instead of fixed packages</li>
-            <li>Premium leisure journeys across Africa and beyond</li>
-            <li>Comfort, flow, and memorable moments designed in</li>
-            <li>Trusted execution from enquiry to return</li>
-          </ul>
-        </div>
       </div>
 
       <div className="hero-stats container">

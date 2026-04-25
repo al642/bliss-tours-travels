@@ -1,4 +1,41 @@
 @media (max-width: 1080px) {
+  .nav-toggle {
+    display: inline-flex;
+    border: 0;
+    background: rgba(24, 50, 43, 0.08);
+    border-radius: 999px;
+    padding: 0.8rem 1rem;
+    font-weight: 800;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 96px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 250, 242, 0.98);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links-open {
+    display: flex;
+  }
+
+  .hero-section {
+    min-height: auto;
+    background:
+      linear-gradient(90deg, rgba(20, 34, 29, 0.9) 0%, rgba(20, 34, 29, 0.72) 58%, rgba(20, 34, 29, 0.42) 100%),
+      linear-gradient(180deg, rgba(20, 34, 29, 0.14), rgba(20, 34, 29, 0.74)),
+      url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=82")
+        center/cover;
+  }
+
   .hero-grid,
   .two-column,
   .contact-layout,
@@ -14,39 +51,34 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-copy,
-  .hero-card {
+  .hero-grid {
     min-height: auto;
   }
 }
 
 @media (max-width: 760px) {
-  .nav-toggle {
-    display: inline-flex;
-    border: 0;
-    background: rgba(24, 50, 43, 0.08);
-    border-radius: 999px;
-    padding: 0.8rem 1rem;
-    font-weight: 800;
+  .navbar {
+    min-height: 86px;
+  }
+
+  .brand-logo {
+    height: 68px;
   }
 
   .nav-links {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    top: 84px;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    border-radius: 20px;
-    background: rgba(255, 250, 242, 0.98);
-    border: 1px solid var(--line);
-    box-shadow: var(--shadow);
+    top: 86px;
   }
 
-  .nav-links-open {
-    display: flex;
+  .footer-logo {
+    height: 132px;
+  }
+
+  .hero-section {
+    padding-top: 3.5rem;
+    background:
+      linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.64)),
+      url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=82")
+        62% center/cover;
   }
 
   .card-grid,

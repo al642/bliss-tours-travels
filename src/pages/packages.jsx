@@ -12,7 +12,11 @@ export default function PackagesPage() {
       <section className="content-section">
         <div className="container card-grid compact-grid">
           {packages.map((trip) => (
-            <article key={trip.title} className="info-card">
+            <article
+              key={trip.title}
+              className="info-card package-card image-card"
+              style={{ "--card-image": `url(${trip.image})` }}
+            >
               <p className="destination-meta">
                 {trip.duration} • {trip.pace}
               </p>
