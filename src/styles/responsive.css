@@ -1,18 +1,61 @@
 @media (max-width: 1080px) {
   .nav-toggle {
     display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
     border: 0;
     background: rgba(24, 50, 43, 0.08);
     border-radius: 999px;
-    padding: 0.8rem 1rem;
-    font-weight: 800;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--text);
+    transition:
+      transform 0.24s ease,
+      opacity 0.18s ease,
+      top 0.24s ease;
+  }
+
+  .nav-toggle span:nth-child(1) {
+    top: 15px;
+  }
+
+  .nav-toggle span:nth-child(2) {
+    top: 23px;
+  }
+
+  .nav-toggle span:nth-child(3) {
+    top: 31px;
+  }
+
+  .nav-toggle-open span:nth-child(1) {
+    top: 23px;
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle-open span:nth-child(3) {
+    top: 23px;
+    transform: rotate(-45deg);
   }
 
   .nav-links {
     position: absolute;
     left: 1rem;
     right: 1rem;
-    top: 96px;
+    top: 148px;
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -58,19 +101,20 @@
 
 @media (max-width: 760px) {
   .navbar {
-    min-height: 86px;
+    min-height: 112px;
   }
 
   .brand-logo {
-    height: 68px;
+    height: 98px;
+    max-width: min(230px, 62vw);
   }
 
   .nav-links {
-    top: 86px;
+    top: 112px;
   }
 
   .footer-logo {
-    height: 132px;
+    height: 156px;
   }
 
   .hero-section {

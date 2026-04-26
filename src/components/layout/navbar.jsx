@@ -27,15 +27,22 @@ export default function Navbar() {
         </Link>
 
         <button
-          className="nav-toggle"
+          className={`nav-toggle ${open ? "nav-toggle-open" : ""}`}
           type="button"
           onClick={() => setOpen((value) => !value)}
           aria-label="Toggle navigation"
+          aria-expanded={open}
+          aria-controls="primary-navigation"
         >
-          Menu
+          <span />
+          <span />
+          <span />
         </button>
 
-        <nav className={`nav-links ${open ? "nav-links-open" : ""}`}>
+        <nav
+          id="primary-navigation"
+          className={`nav-links ${open ? "nav-links-open" : ""}`}
+        >
           {navItems.map((item) => (
             <NavLink key={item.to} to={item.to} onClick={() => setOpen(false)}>
               {item.label}

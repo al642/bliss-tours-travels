@@ -13,19 +13,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 96px;
+  min-height: 148px;
 }
 
 .brand {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  min-width: 74px;
+  min-width: 120px;
 }
 
 .brand-logo {
   width: auto;
-  height: 78px;
+  height: 132px;
+  max-width: min(280px, 38vw);
   object-fit: contain;
 }
 
@@ -50,7 +51,7 @@
 .hero-section {
   position: relative;
   isolation: isolate;
-  min-height: calc(100vh - 96px);
+  min-height: calc(100vh - 148px);
   padding: 5rem 0 2.5rem;
   overflow: hidden;
   background:
@@ -327,8 +328,8 @@
 
 .footer-logo {
   width: auto;
-  height: 156px;
-  margin: -1.4rem 0 0.8rem;
+  height: 188px;
+  margin: -1.8rem 0 0.8rem;
   object-fit: contain;
 }
 

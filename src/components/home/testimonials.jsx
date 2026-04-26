@@ -7,8 +7,8 @@ export default function TestimonialsPreview() {
       <div className="container">
         <SectionTitle
           eyebrow="Social proof"
-          title="Travel sites convert better when the reassurance feels specific."
-          text="Until live client reviews are added, this section supports the premium, client-focused positioning established in the company profile."
+          title="Reassurance from journeys planned with care."
+          text="Travellers choose Bliss for the comfort of knowing every stay, transfer, activity, and special moment has been thoughtfully arranged."
         />
 
         <div className="card-grid compact-grid">

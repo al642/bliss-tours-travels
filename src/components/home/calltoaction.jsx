@@ -5,10 +5,10 @@ export default function CallToAction() {
     <section className="content-section">
       <div className="container cta-panel">
         <div>
-          <p className="eyebrow">Ready to shape the live brand?</p>
+          <p className="eyebrow">Ready for a custom journey?</p>
           <h2>Design travel that feels effortless and unforgettable from the first click.</h2>
           <p>
-            Bliss Tours is positioned as a premium, experience-led brand for travellers who want thoughtful planning, quality execution, and journeys built around them.
+            Tell us what you want from the trip, and we will shape the route, stays, experiences, and details around your pace and preferences.
           </p>
         </div>
         <Button to="/contact">Request a Custom Trip</Button>

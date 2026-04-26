@@ -7,7 +7,7 @@ export default function AboutPage() {
       <PageBanner
         eyebrow="About Bliss"
         title="A premium travel brand built around personalization, precision, and experience."
-        text="This page uses the company profile to explain what Bliss Tours does, who it serves, and why its approach is different from fixed-package travel sellers."
+        text="We design each journey around the traveller, bringing together thoughtful planning, seamless coordination, and experiences that feel personal from start to finish."
       />
       <section className="content-section">
         <div className="container two-column">

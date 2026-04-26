@@ -15,7 +15,7 @@ export default function ContactPage() {
       <PageBanner
         eyebrow="Contact"
         title="Make the next step feel easy."
-        text="Bliss Tours is built around personalized planning, so the enquiry process should feel simple, warm, and tailored from the start."
+        text="Share where you want to go, what matters most, and the kind of journey you have in mind. We will help shape the details from there."
       />
       <section className="content-section">
         <div className="container contact-layout">
@@ -29,7 +29,7 @@ export default function ContactPage() {
               <a href={`mailto:${company.email}`}>{company.email}</a>
             </p>
             <p>
-              The brand is Uganda-based. The phone, WhatsApp, email, and exact office details can now be swapped with your live contact information.
+              Reach out for custom itineraries, premium escapes, group travel, airport transfers, and carefully planned experiences across Africa and beyond.
             </p>
           </article>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
             </button>
             {submitted ? (
               <p className="form-note">
-                Thanks. This demo form is ready to be connected to email, WhatsApp, or a CRM workflow.
+                Thank you. The Bliss team will review your enquiry and follow up with the next planning steps.
               </p>
             ) : null}
           </form>

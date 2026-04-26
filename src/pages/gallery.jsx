@@ -14,8 +14,8 @@ export default function GalleryPage() {
     <>
       <PageBanner
         eyebrow="Gallery"
-        title="A visual page ready for real photography."
-        text="Travel websites live or die by photography. These placeholders show how the gallery can support the brand once image assets are added."
+        title="A glimpse into the moments Bliss can shape."
+        text="From safari mornings to coastal escapes and thoughtful welcome details, every journey is designed to feel beautiful in the moment and memorable long after."
       />
       <section className="content-section">
         <div className="container gallery-grid">

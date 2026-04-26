@@ -6,8 +6,8 @@ export default function PackagesPage() {
     <>
       <PageBanner
         eyebrow="Packages"
-        title="Sample journeys that feel ready to book."
-        text="Inspired by the strongest safari sites, these packages are structured as sales-ready summaries instead of generic descriptions."
+        title="Curated journeys with room for personal touches."
+        text="Start with a thoughtfully paced route, then let Bliss refine the stays, experiences, and special details around your travel style."
       />
       <section className="content-section">
         <div className="container card-grid compact-grid">

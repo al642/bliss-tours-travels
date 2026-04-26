@@ -6,8 +6,8 @@ export default function TestimonialsPage() {
     <>
       <PageBanner
         eyebrow="Testimonials"
-        title="Trust is one of the main products a travel company sells."
-        text="These testimonials are placeholders for your real client voice and should later be replaced with actual reviews and ratings."
+        title="Confidence begins before the journey does."
+        text="Travellers come to Bliss for clear communication, refined planning, and the reassurance that every detail has been considered."
       />
       <section className="content-section">
         <div className="container card-grid compact-grid">

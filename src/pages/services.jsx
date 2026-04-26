@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <PageBanner
         eyebrow="Services"
         title="Services built around seamless, customized travel experiences."
-        text="The company profile positions Bliss Tours as an experience-led planner offering tailored journeys, premium escapes, and dependable end-to-end coordination."
+        text="Whether you need a full itinerary or support with selected details, Bliss brings structure, polish, and care to every stage of the journey."
       />
       <section className="content-section">
         <div className="container card-grid compact-grid">

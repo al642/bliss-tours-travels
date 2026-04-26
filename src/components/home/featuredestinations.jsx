@@ -7,8 +7,8 @@ export default function FeaturedDestinations() {
       <div className="container">
         <SectionTitle
           eyebrow="Featured destinations"
-          title="Lead with places people already dream about."
-          text="Twiga Tours and Safari.com both make destinations immediately visible. That pattern works because visitors can picture themselves in the trip early."
+          title="Places made for unforgettable moments."
+          text="From safari plains to island coastlines and misty mountain forests, each destination is selected for travellers who want beauty, comfort, and a sense of wonder."
         />
 
         <div className="card-grid">

@@ -12,7 +12,7 @@ export const company = {
   stats: [
     { value: "100%", label: "personalized trips" },
     { value: "Africa +", label: "international reach" },
-    { value: "Premium", label: "travel positioning" },
+    { value: "Premium", label: "journey style" },
     { value: "Detail-led", label: "planning approach" }
   ],
   highlights: [

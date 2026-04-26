@@ -6,8 +6,8 @@ export default function DestinationsPage() {
     <>
       <PageBanner
         eyebrow="Destinations"
-        title="The experiences should feel tangible, not abstract."
-        text="Each destination card is written to quickly communicate place, season, and the kind of traveller it suits."
+        title="Destinations chosen for beauty, comfort, and memory-making."
+        text="Explore safari icons, island escapes, and mountain forests with guidance on the best seasons, signature experiences, and travel style for each place."
       />
       <section className="content-section">
         <div className="container card-grid">
