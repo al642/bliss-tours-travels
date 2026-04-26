@@ -94,6 +94,22 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .destinations-rail {
+    width: min(100%, calc(100vw - 1rem));
+    margin-left: max(1rem, calc((100vw - var(--container)) / 2));
+    padding-right: 1rem;
+  }
+
+  .destinations-rail .destination-card {
+    flex-basis: min(360px, 72vw);
+  }
+
+  .destinations-rail .destination-card:hover,
+  .destinations-rail .destination-card:focus,
+  .destinations-rail .destination-card:focus-within {
+    flex-basis: min(460px, 84vw);
+  }
+
   .hero-grid {
     min-height: auto;
   }
@@ -125,12 +141,48 @@
         62% center/cover;
   }
 
+  .hero-slide-dots {
+    margin-top: 0;
+  }
+
+  .hero-slide-dots button {
+    width: 28px;
+  }
+
+  .hero-slide-dots .hero-slide-dot-active {
+    width: 44px;
+  }
+
   .card-grid,
   .compact-grid,
   .timeline-grid,
   .gallery-grid,
   .hero-stats {
     grid-template-columns: 1fr;
+  }
+
+  .destinations-rail {
+    width: calc(100vw - 1rem);
+    margin-left: 1rem;
+    gap: 0.9rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .destinations-rail .destination-card {
+    flex-basis: 78vw;
+    min-height: 430px;
+    padding: 1.2rem;
+  }
+
+  .destinations-rail .destination-card:hover,
+  .destinations-rail .destination-card:focus,
+  .destinations-rail .destination-card:focus-within {
+    flex-basis: 86vw;
+    transform: translateY(-4px);
+  }
+
+  .destinations-rail .destination-card h2 {
+    font-size: 2rem;
   }
 
   .cta-panel {
