@@ -3,6 +3,29 @@ import { company } from "../../data/company";
 import { heroSlides } from "../../data/gallery";
 import Button from "../shared/button";
 
+function getSlideSources(slide) {
+  return typeof slide === "string" ? [slide] : [slide.src, ...(slide.fallbacks || [])].filter(Boolean);
+}
+
+function HeroSlideImage({ active, slide }) {
+  const sources = getSlideSources(slide);
+  const [sourceIndex, setSourceIndex] = useState(0);
+  const src = sources[sourceIndex];
+
+  if (!src) {
+    return null;
+  }
+
+  return (
+    <img
+      className={`hero-slide ${active ? "hero-slide-active" : ""}`}
+      src={src}
+      alt=""
+      onError={() => setSourceIndex((index) => index + 1)}
+    />
+  );
+}
+
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -23,11 +46,10 @@ export default function HeroSection() {
       {heroSlides.length > 0 ? (
         <div className="hero-slideshow" aria-hidden="true">
           {heroSlides.map((slide, index) => (
-            <img
-              key={slide}
-              className={`hero-slide ${index === activeSlide ? "hero-slide-active" : ""}`}
-              src={slide}
-              alt=""
+            <HeroSlideImage
+              key={typeof slide === "string" ? slide : slide.src}
+              active={index === activeSlide}
+              slide={slide}
             />
           ))}
         </div>
@@ -51,7 +73,7 @@ export default function HeroSection() {
         <div className="hero-slide-dots" aria-label="Hero slideshow">
           {heroSlides.map((slide, index) => (
             <button
-              key={slide}
+              key={typeof slide === "string" ? slide : slide.src}
               className={index === activeSlide ? "hero-slide-dot-active" : ""}
               type="button"
               onClick={() => setActiveSlide(index)}

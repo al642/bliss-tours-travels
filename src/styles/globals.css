@@ -11,8 +11,11 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(184, 128, 54, 0.18), transparent 28%),
-    linear-gradient(180deg, #efe4d1 0%, var(--bg) 40%, #f9f6ef 100%);
+    radial-gradient(circle at top left, var(--body-glow), transparent 28%),
+    linear-gradient(180deg, var(--body-start) 0%, var(--bg) 40%, var(--body-end) 100%);
+  transition:
+    color 0.28s ease,
+    background 0.28s ease;
 }
 
 a {
@@ -66,7 +69,7 @@ ul {
 }
 
 .alt-section {
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--bg-panel);
   backdrop-filter: blur(8px);
 }
 
@@ -98,7 +101,10 @@ ul {
   border-radius: 999px;
   padding: 0.95rem 1.35rem;
   font-weight: 800;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .button:hover {
@@ -107,11 +113,11 @@ ul {
 
 .button-primary {
   background: var(--text);
-  color: #fff;
+  color: var(--surface-strong);
 }
 
 .button-ghost {
-  background: rgba(24, 50, 43, 0.08);
+  background: var(--soft-fill);
   color: var(--text);
 }
 

@@ -7,7 +7,7 @@
     width: 48px;
     height: 48px;
     border: 0;
-    background: rgba(24, 50, 43, 0.08);
+    background: var(--soft-fill);
     border-radius: 999px;
     padding: 0;
     cursor: pointer;
@@ -61,7 +61,7 @@
     align-items: flex-start;
     padding: 1rem;
     border-radius: 20px;
-    background: rgba(255, 250, 242, 0.98);
+    background: var(--nav-menu-bg);
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
   }
@@ -92,12 +92,6 @@
   .gallery-grid,
   .hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .destinations-rail {
-    width: min(100%, calc(100vw - 1rem));
-    margin-left: max(1rem, calc((100vw - var(--container)) / 2));
-    padding-right: 1rem;
   }
 
   .destinations-rail .destination-card {
@@ -162,8 +156,6 @@
   }
 
   .destinations-rail {
-    width: calc(100vw - 1rem);
-    margin-left: 1rem;
     gap: 0.9rem;
     scroll-snap-type: x mandatory;
   }

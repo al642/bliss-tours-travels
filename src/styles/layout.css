@@ -2,9 +2,12 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 242, 232, 0.88);
+  background: var(--nav-bg);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(24, 50, 43, 0.08);
+  border-bottom: 1px solid var(--line);
+  transition:
+    background 0.28s ease,
+    border-color 0.28s ease;
 }
 
 .navbar {
@@ -46,6 +49,102 @@
 
 .nav-links .active {
   color: var(--accent-strong);
+}
+
+.theme-toggle {
+  width: 64px;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle-track {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 22% 28%, rgba(255, 255, 255, 0.9), transparent 18%),
+    linear-gradient(135deg, rgba(240, 195, 125, 0.94), rgba(184, 128, 54, 0.84));
+  box-shadow: inset 0 1px 6px rgba(24, 50, 43, 0.16);
+  transition:
+    background 0.32s ease,
+    border-color 0.32s ease,
+    box-shadow 0.32s ease;
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #fffaf2;
+  color: #805015;
+  box-shadow: 0 8px 18px rgba(24, 50, 43, 0.22);
+  transform: translateX(0) rotate(0deg);
+  transition:
+    transform 0.34s cubic-bezier(0.2, 0.8, 0.2, 1),
+    background 0.28s ease,
+    color 0.28s ease;
+}
+
+.theme-icon {
+  grid-area: 1 / 1;
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition:
+    opacity 0.22s ease,
+    transform 0.28s ease;
+}
+
+.theme-icon-moon {
+  opacity: 0;
+  transform: scale(0.55) rotate(-28deg);
+}
+
+.theme-toggle-dark .theme-toggle-track {
+  background:
+    radial-gradient(circle at 72% 28%, rgba(240, 195, 125, 0.55) 0 2px, transparent 3px),
+    radial-gradient(circle at 36% 64%, rgba(255, 255, 255, 0.5) 0 1px, transparent 2px),
+    linear-gradient(135deg, #10241f, #1e3630);
+  box-shadow:
+    inset 0 1px 8px rgba(0, 0, 0, 0.32),
+    0 0 0 1px rgba(240, 195, 125, 0.08);
+}
+
+.theme-toggle-dark .theme-toggle-thumb {
+  color: #f2c783;
+  background: #14221d;
+  transform: translateX(26px) rotate(180deg);
+}
+
+.theme-toggle-dark .theme-icon-sun {
+  opacity: 0;
+  transform: scale(0.5) rotate(48deg);
+}
+
+.theme-toggle-dark .theme-icon-moon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(240, 195, 125, 0.72);
+  outline-offset: 4px;
+  border-radius: 999px;
 }
 
 .hero-section {
@@ -93,7 +192,7 @@
   inset: auto 0 0;
   z-index: -1;
   height: 32%;
-  background: linear-gradient(180deg, transparent, rgba(247, 242, 232, 0.96));
+  background: linear-gradient(180deg, transparent, var(--hero-fade));
   pointer-events: none;
 }
 
@@ -162,7 +261,7 @@
 
 .hero-section .button-primary {
   background: #fff;
-  color: var(--text);
+  color: #18322b;
 }
 
 .hero-section .button-ghost {
@@ -181,16 +280,34 @@
 .hero-stats article {
   padding: 1.4rem;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 250, 242, 0.92);
+  border: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
 
 .hero-stats strong {
   display: block;
   margin-bottom: 0.35rem;
+  color: #18322b;
   font-size: 2rem;
   font-family: "Fraunces", serif;
+}
+
+.hero-stats span {
+  color: #40554e;
+}
+
+:root[data-theme="dark"] .hero-stats article {
+  background: rgba(20, 34, 29, 0.82);
+  border-color: rgba(247, 242, 232, 0.16);
+}
+
+:root[data-theme="dark"] .hero-stats strong {
+  color: #f7f2e8;
+}
+
+:root[data-theme="dark"] .hero-stats span {
+  color: #d8cdbd;
 }
 
 .two-column {
@@ -204,16 +321,20 @@
   gap: 1rem;
 }
 
+.destinations-rail-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
 .destinations-rail {
   display: flex;
   gap: 1.25rem;
   overflow-x: auto;
-  overflow-y: visible;
-  padding-block: 0.5rem 1.25rem;
+  padding-block: 0.75rem 1.5rem;
   scroll-padding-inline: 1rem;
   scroll-snap-type: x proximity;
   scrollbar-width: thin;
-  scrollbar-color: rgba(24, 50, 43, 0.32) transparent;
+  scrollbar-color: var(--accent) transparent;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -222,12 +343,12 @@
 }
 
 .destinations-rail::-webkit-scrollbar-track {
-  background: rgba(24, 50, 43, 0.08);
+  background: var(--soft-fill);
   border-radius: 999px;
 }
 
 .destinations-rail::-webkit-scrollbar-thumb {
-  background: rgba(24, 50, 43, 0.32);
+  background: var(--accent);
   border-radius: 999px;
 }
 
@@ -246,6 +367,7 @@
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
+  background-color: #18322b;
   background:
     linear-gradient(180deg, rgba(20, 34, 29, 0.14), rgba(20, 34, 29, 0.88)),
     linear-gradient(120deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.18) 58%),
@@ -292,6 +414,12 @@
     box-shadow 0.24s ease;
 }
 
+.destinations-rail .destination-card:focus-visible {
+  box-shadow:
+    0 0 0 4px rgba(240, 195, 125, 0.72),
+    0 30px 80px rgba(20, 36, 31, 0.24);
+}
+
 .destinations-rail .destination-card:hover,
 .destinations-rail .destination-card:focus,
 .destinations-rail .destination-card:focus-within {
@@ -302,11 +430,29 @@
 
 .destinations-rail .destination-card::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 16%, rgba(0, 0, 0, 0.68));
+  z-index: 1;
+}
+
+.destination-card-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.destinations-rail .destination-card:hover .destination-card-image,
+.destinations-rail .destination-card:focus .destination-card-image,
+.destinations-rail .destination-card:focus-within .destination-card-image {
+  transform: scale(1.06);
 }
 
 .destination-card-copy {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(100%, 420px);
 }
 
@@ -404,7 +550,8 @@
   font-weight: 800;
   background:
     linear-gradient(180deg, transparent, rgba(24, 50, 43, 0.88)),
-    linear-gradient(135deg, rgba(184, 128, 54, 0.55), rgba(24, 50, 43, 0.85));
+    linear-gradient(135deg, rgba(184, 128, 54, 0.55), rgba(24, 50, 43, 0.85)),
+    var(--gallery-image) center/cover;
 }
 
 .contact-layout {
@@ -425,7 +572,8 @@
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 0.95rem 1rem;
-  background: rgba(255, 255, 255, 0.82);
+  background: var(--field-bg);
+  color: var(--text);
 }
 
 .form-note {

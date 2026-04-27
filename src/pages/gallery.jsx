@@ -1,13 +1,5 @@
 import PageBanner from "../components/layout/pagebanner";
-
-const galleryItems = [
-  "Safari departure mornings",
-  "Luxury lodge sunsets",
-  "Beach extensions on the coast",
-  "Corporate incentive moments",
-  "Wildlife close-ups",
-  "Custom welcome details"
-];
+import { galleryItems } from "../data/gallery";
 
 export default function GalleryPage() {
   return (
@@ -20,8 +12,12 @@ export default function GalleryPage() {
       <section className="content-section">
         <div className="container gallery-grid">
           {galleryItems.map((item) => (
-            <article key={item} className="gallery-tile">
-              <span>{item}</span>
+            <article
+              key={item.src}
+              className="gallery-tile"
+              style={{ "--gallery-image": `url("${item.src}")` }}
+            >
+              <span>{item.title}</span>
             </article>
           ))}
         </div>
