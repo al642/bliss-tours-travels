@@ -2,11 +2,11 @@ export const heroSlides = [
   {
     src: "/images/gallery/game drive experience in masai mara.jpg",
     fallbacks: [
-      "/images/gallery/hot air ballon experience over masai mara.jpg"
+      "/images/gallery/gorilla habituation in bwindi.jpg"
     ]
   },
   {
-    src: "/images/gallery/heart of zanzibar.jpg",
+    src: "/images/gallery/hot air ballon experience over masai mara.jpg",
     fallbacks: [
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1800&q=82"
     ]

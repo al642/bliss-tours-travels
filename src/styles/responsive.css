@@ -82,9 +82,117 @@
 
   .hero-grid,
   .two-column,
+  .about-scroll-grid,
+  .about-split,
+  .services-reveal-grid,
+  .services-split,
   .contact-layout,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    min-height: auto;
+  }
+
+  .about-hero-copy {
+    padding: 6rem 0 5rem;
+  }
+
+  .about-hero-copy h1 {
+    font-size: 4rem;
+  }
+
+  .about-scroll-section {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .about-scroll-intro {
+    position: static;
+  }
+
+  .about-scroll-intro h2,
+  .about-large-copy h2,
+  .about-immersive h2,
+  .about-closing h2 {
+    font-size: 3rem;
+  }
+
+  .about-phrase-stack {
+    gap: 2.75rem;
+    padding: 2rem 0 0;
+  }
+
+  .about-phrase {
+    font-size: 3.4rem;
+  }
+
+  .about-split-section {
+    padding: 2rem 0 6rem;
+  }
+
+  .about-image-frame {
+    min-height: 460px;
+  }
+
+  .about-immersive-section {
+    min-height: 620px;
+  }
+
+  .about-closing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services-hero {
+    min-height: auto;
+  }
+
+  .services-hero-copy {
+    padding: 6rem 0 5rem;
+  }
+
+  .services-hero-copy h1,
+  .services-reveal-intro h2,
+  .services-large-copy h2,
+  .services-process h2 {
+    font-size: 3.3rem;
+  }
+
+  .services-reveal-section {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .services-reveal-intro {
+    position: static;
+  }
+
+  .services-phrase-stack {
+    gap: 2.35rem;
+    padding: 2rem 0 0;
+  }
+
+  .services-phrase {
+    font-size: 3rem;
+  }
+
+  .services-split-section {
+    padding: 2rem 0 6rem;
+  }
+
+  .services-image-panel {
+    min-height: 460px;
+    order: -1;
+  }
+
+  .destination-teaser-section {
+    min-height: 500px;
+    background:
+      linear-gradient(90deg, rgba(20, 34, 29, 0.9) 0%, rgba(20, 34, 29, 0.66) 64%, rgba(20, 34, 29, 0.32) 100%),
+      linear-gradient(180deg, rgba(20, 34, 29, 0.08), rgba(20, 34, 29, 0.5)),
+      url("/images/gallery/camel caravan in the sahara desert.jpg") center/cover;
   }
 
   .card-grid,
@@ -130,6 +238,104 @@
 
   .hero-section {
     padding-top: 3.5rem;
+  }
+
+  .about-hero-copy {
+    padding: 4.5rem 0 4rem;
+  }
+
+  .about-hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .about-hero-copy p,
+  .about-large-copy p,
+  .about-immersive p,
+  .about-closing p {
+    font-size: 1rem;
+  }
+
+  .about-scroll-intro h2,
+  .about-large-copy h2,
+  .about-immersive h2,
+  .about-closing h2 {
+    font-size: 2.35rem;
+  }
+
+  .about-phrase {
+    font-size: 2.55rem;
+    line-height: 1.06;
+  }
+
+  .about-scroll-section,
+  .about-closing-section {
+    padding: 4rem 0;
+  }
+
+  .about-split-section {
+    padding-bottom: 4rem;
+  }
+
+  .about-image-frame {
+    min-height: 340px;
+  }
+
+  .about-immersive-section {
+    min-height: 520px;
+    background:
+      linear-gradient(180deg, rgba(20, 34, 29, 0.9), rgba(20, 34, 29, 0.54)),
+      url("/images/gallery/lions in a tree at queen elizabeth national park.jpg") center/cover;
+  }
+
+  .services-hero-copy {
+    padding: 4.5rem 0 4rem;
+  }
+
+  .services-hero-copy h1,
+  .services-reveal-intro h2,
+  .services-large-copy h2,
+  .services-process h2 {
+    font-size: 2.4rem;
+  }
+
+  .services-hero-copy p,
+  .services-reveal-intro p,
+  .services-large-copy p,
+  .services-process-lines p {
+    font-size: 1rem;
+  }
+
+  .services-phrase {
+    font-size: 2.35rem;
+    line-height: 1.06;
+  }
+
+  .services-reveal-section,
+  .services-process-section {
+    padding: 4rem 0;
+  }
+
+  .services-split-section {
+    padding-bottom: 4rem;
+  }
+
+  .services-image-panel {
+    min-height: 340px;
+  }
+
+  .services-process-lines p {
+    grid-template-columns: 2.8rem 1fr;
+  }
+
+  .destination-teaser-section {
+    min-height: 480px;
+    background:
+      linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.58)),
+      url("/images/gallery/camel caravan in the sahara desert.jpg") center/cover;
+  }
+
+  .destination-teaser-copy {
+    padding: 4rem 0;
   }
 
   .hero-section::before {
