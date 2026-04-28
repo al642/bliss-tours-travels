@@ -16,7 +16,7 @@ export default function FeaturedDestinations() {
             <article
               key={destination.slug}
               className="destination-card image-card"
-              style={{ "--card-image": `url(${destination.image})` }}
+              style={{ "--card-image": `url("${destination.image}")` }}
             >
               <p className="destination-meta">
                 {destination.country} • Best in {destination.season}

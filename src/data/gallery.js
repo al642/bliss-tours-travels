@@ -2,7 +2,7 @@ export const heroSlides = [
   {
     src: "/images/gallery/game drive experience in masai mara.jpg",
     fallbacks: [
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=82"
+      "/images/gallery/hot air ballon experience over masai mara.jpg"
     ]
   },
   {

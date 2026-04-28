@@ -72,11 +72,12 @@
 
   .hero-section {
     min-height: auto;
+  }
+
+  .hero-section::before {
     background:
       linear-gradient(90deg, rgba(20, 34, 29, 0.9) 0%, rgba(20, 34, 29, 0.72) 58%, rgba(20, 34, 29, 0.42) 100%),
-      linear-gradient(180deg, rgba(20, 34, 29, 0.14), rgba(20, 34, 29, 0.74)),
-      url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=82")
-        center/cover;
+      linear-gradient(180deg, rgba(20, 34, 29, 0.14), rgba(20, 34, 29, 0.74));
   }
 
   .hero-grid,
@@ -129,10 +130,10 @@
 
   .hero-section {
     padding-top: 3.5rem;
-    background:
-      linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.64)),
-      url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=82")
-        62% center/cover;
+  }
+
+  .hero-section::before {
+    background: linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.64));
   }
 
   .hero-slide-dots {
