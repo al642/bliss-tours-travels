@@ -52,7 +52,7 @@ export default function DestinationsPage() {
     <>
       <PageBanner
         eyebrow="Destinations"
-        title="Destinations chosen for beauty, comfort, and memory-making."
+        title="Places made for unforgettable moments."
         text="Explore safari icons, island escapes, and mountain forests with guidance on the best seasons, signature experiences, and travel style for each place."
       />
       <section className="content-section">

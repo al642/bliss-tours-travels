@@ -61,7 +61,7 @@ export default function HeroSection() {
           <h1>{company.heroTitle}</h1>
           <p>{company.heroDescription}</p>
           <div className="hero-actions">
-            <Button to="/packages">Explore Packages</Button>
+            <Button to="/destinations">Find Your Perfect Escape</Button>
             <Button to="/about" variant="ghost">
               Our Story
             </Button>

@@ -187,14 +187,6 @@
     order: -1;
   }
 
-  .destination-teaser-section {
-    min-height: 500px;
-    background:
-      linear-gradient(90deg, rgba(20, 34, 29, 0.9) 0%, rgba(20, 34, 29, 0.66) 64%, rgba(20, 34, 29, 0.32) 100%),
-      linear-gradient(180deg, rgba(20, 34, 29, 0.08), rgba(20, 34, 29, 0.5)),
-      url("/images/gallery/camel caravan in the sahara desert.jpg") center/cover;
-  }
-
   .card-grid,
   .compact-grid,
   .timeline-grid,
@@ -327,17 +319,6 @@
     grid-template-columns: 2.8rem 1fr;
   }
 
-  .destination-teaser-section {
-    min-height: 480px;
-    background:
-      linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.58)),
-      url("/images/gallery/camel caravan in the sahara desert.jpg") center/cover;
-  }
-
-  .destination-teaser-copy {
-    padding: 4rem 0;
-  }
-
   .hero-section::before {
     background: linear-gradient(180deg, rgba(20, 34, 29, 0.82), rgba(20, 34, 29, 0.64));
   }
@@ -390,7 +371,7 @@
   }
 
   .content-section {
-    padding: 4rem 0;
+    padding: 3.25rem 0;
   }
 
   .page-banner {
